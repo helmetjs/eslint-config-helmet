@@ -102,7 +102,7 @@ const eslintRules = {
   'keyword-spacing': ['error', { 'before': true, 'after': true }],
   'new-cap': ['error', { 'newIsCap': true, 'capIsNew': false }],
   'linebreak-style': ['error', 'unix'],
-  'max-depth': ['error', 10],
+  'max-depth': ['error', 30],
   'max-len': ['warn', {
     code: 128,
     ignoreUrls: true,
@@ -110,8 +110,6 @@ const eslintRules = {
     ignoreTemplateLiterals: true,
     ignoreRegExpLiterals: true
   }],
-  'max-lines': 'error',
-  'max-lines-per-function': 'error',
   'max-params': ['error', 6],
   'multiline-comment-style': ['warn', 'starred-block'],
   'new-parens': 'warn',
@@ -123,14 +121,19 @@ const eslintRules = {
   'no-unneeded-ternary': 'warn',
   'no-whitespace-before-property': 'warn',
   'object-curly-spacing': ['warn', 'always'],
-  'object-property-newline': ['warn', { 'allowMultiplePropertiesPerLine': true }],
+  'object-property-newline': ['warn', { allowMultiplePropertiesPerLine: true }],
   'operator-assignment': ['warn', 'always'],
   'quotes': ['warn', 'single', {
     avoidEscape: true,
     allowTemplateLiterals: false
   }],
   'no-var': 'error',
-  'prefer-const': 'error'
+  'prefer-const': 'error',
+  'prefer-arrow-callback': ['warn', { allowNamedFunctions: true }],
+  'prefer-template': 'warn',
+  'prefer-destructuring': ['warn', { 'object': true, 'array': false }],
+  'object-shorthand': 'error',
+  'no-useless-rename': 'error'
 }
 
 module.exports = {
@@ -138,6 +141,10 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended'
   ],
+  env: {
+    es6: true,
+    node: true
+  },
   parserOptions: {
     project: './tsconfig.json'
   },
