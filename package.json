@@ -2,7 +2,7 @@
   "name": "eslint-config-helmet",
   "author": "Evan Hahn <me@evanhahn.com> (https://evanhahn.com)",
   "description": "ESLint configuration for Helmet's repositories",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://github.com/helmetjs/eslint-config-helmet",
   "bugs": {
     "url": "https://github.com/helmetjs/eslint-config-helmet/issues",
