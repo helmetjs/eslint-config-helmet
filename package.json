@@ -1,0 +1,35 @@
+{
+  "name": "eslint-config-helmet",
+  "author": "Evan Hahn <me@evanhahn.com> (https://evanhahn.com)",
+  "description": "ESLint configuration for Helmet's repositories",
+  "version": "0.0.0",
+  "homepage": "https://github.com/helmetjs/eslint-config-helmet",
+  "bugs": {
+    "url": "https://github.com/helmetjs/eslint-config-helmet/issues",
+    "email": "me@evanhahn.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/helmetjs/eslint-config-helmet.git"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "standard --fix"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^12.0.1"
+  },
+  "peerDependencies": {
+    "eslint": ">=5.0.0",
+    "@typescript-eslint/eslint-plugin": ">=1.7.0",
+    "@typescript-eslint/parser": ">=1.7.0",
+    "typescript": ">=3.0.0"
+  }
+}
