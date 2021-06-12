@@ -22,14 +22,13 @@
     "test": "npm run lint",
     "lint": "standard --fix"
   },
-  "dependencies": {},
   "devDependencies": {
-    "standard": "^14.3.4"
+    "standard": "^16.0.3"
   },
   "peerDependencies": {
-    "eslint": ">=5.0.0",
     "@typescript-eslint/eslint-plugin": ">=1.7.0",
     "@typescript-eslint/parser": ">=1.7.0",
+    "eslint": ">=5.0.0",
     "typescript": ">=3.0.0"
   }
 }
